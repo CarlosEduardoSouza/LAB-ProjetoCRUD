@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2><span id="lbl_titulo"></span></h2>
+
+
+<section class="content">
+    <div class="row">
+        <div class="box box-info">
+            <div class="box-header with-border">
+                <a href="/Contato/Consultar" class="btn btn-success btn-secondary"><span class="fa fa-arrow-left"></span> Voltar</a>
+            </div>
+            <div class="box-body">
+                <div>
+                    <input type="hidden" id="Id" />
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label><span style="color: red;">*</span> Nome</label>
+                        <input type="text" class="form-control" id="txtNome" placeholder="Nome" maxlength="50">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label> E-mail</label>
+                        <input type="text" class="form-control" id="txtEmail" placeholder="Email" onblur="ValidarEmail(this);" maxlength="50">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label> Telefone</label>
+                        <input type="text" class="form-control" id="txtTelefone" placeholder="Telefone" maxlength="14">
+                    </div>
+                </div>
+
+                   <div class="col-md-12">
+                    <span style="color: red;">* Campos de preenchimento obrigatório</span>
+                  </div>
+                    <div class="col-md-12">
+                        <hr />
+                    </div>
+
+
+
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary  pull-right" id="btnLimpar" onclick="LimparContato();"> Limpar</button>
+                        <button type="button" class="btn btn-primary  pull-right" id="btnSalvar" onclick="CadastrarContato();"> Salvar</button>
+                        <button type="button" class="btn btn-primary  pull-right" id="btnEditar" onclick="EditarContato();"> Editar</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<script src="~/Scripts/Contato/Cadastrar.js"></script>

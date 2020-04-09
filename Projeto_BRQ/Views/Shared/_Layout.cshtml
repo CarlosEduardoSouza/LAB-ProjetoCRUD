@@ -1,0 +1,87 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRQ</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/ionicons.min.css" rel="stylesheet" />
+    <link href="~/Content/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery-jvectormap.css" rel="stylesheet" />
+    <link href="~/Content/AdminLTE.min.css" rel="stylesheet" />
+    <link href="~/Content/skin-blue.min.css" rel="stylesheet" />
+    <link href="~/Content/Base.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+
+           
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="/Home/Index" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><img src="@Url.Content("~/img/logo.png")" width="50" /></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><img src="@Url.Content("~/img/logo.png")" width="75" /></span>
+            </a>            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <span class="title-system">Teste BRQ</span>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav"></ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+           
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li>
+                        <a href="/Contato/Index">
+                            <i class="fa fa-edit"></i> <span>Contatos</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        @*}*@
+        <div class="content-wrapper">
+            <section class="content">
+                @RenderBody()
+            </section>
+        </div>
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                Versão: 1.0.0
+            </div>
+            <strong>Copyright &copy; 2019 <a href="#">BRQ</a>.</strong>
+        </footer>
+    </div>
+    <script src="~/scripts/jquery.min.js"></script>
+    <script src="~/plugins/jquery.mask.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+    <script src="~/scripts/jquery.dataTables.min.js"></script>
+    <script src="~/scripts/dataTables.bootstrap.min.js"></script>
+    <script src="~/scripts/fastclick.js"></script>
+    <script src="~/scripts/adminlte.min.js"></script>
+    <script src="~/scripts/jquery.sparkline.min.js"></script>
+    <script src="~/plugins/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="~/plugins/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="~/scripts/jquery.slimscroll.min.js"></script>
+    <script src="~/plugins/sweetalert2.all.min.js"></script>
+    <script src="~/scripts/Base.js"></script>
+</body>
+</html>
